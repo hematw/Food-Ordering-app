@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 400px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #2a160e;
+  border: 3px solid black;
+  overflow: auto;
+}
+
+header {
+  background-color: #252525;
+  background-image: url("images/background.jpeg");
+  background-size: cover;
+}
+
+.header-content {
+  text-shadow: 0 0 4px rgb(0, 0, 0);
+}
+
+.header-content h1 {
+  color: #ffd633;
+  font-size: 2.3em;
+  font-family: "Anta", sans-serif;
+}
+
+.header-content p {
+  font-weight: 600;
+}
+
+header, section {
+  padding: 20px;
+}
+
+.menu-item {
+  background-color: #252525;
+  border-radius: 20px;
+  margin-bottom: 26px;
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.menu-item img{
+  width: 100%;
+  height: 140px;
+}
+
+.item-detail {
+  padding: 20px;
+}
+
+.item-detail p,
+.item-detail h2 {
+  margin-bottom: 10px;
+}
+
+.orders-list {
+  background-color: #252525;
+  list-style-type: none;
+  margin-bottom: 4px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid #4d4949;
+}
+
+.order-item .price {
+  margin: auto;
+  margin-left: 10px;
+}
+
+.price {
+  font-weight: 600;
+  color: #ffd633;
+}
+
+.btn {
+  padding: 8px 16px;
+  font-size: 1em;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-add,
+.btn-cmp,
+.btn-pay {
+  background-color: #6bc44e;
+  color: #fff;
+}
+
+.btn-rmv {
+  background-color: transparent;
+}
+
+.rmv-btn:hover {
+  background-color: #3f3e3e;
+}
+
+.total-orders {
+  background-color: #252525;
+  padding: 10px;
+  text-align: center;
+}
+
+.total-orders button {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.total-orders p,
+.total-orders h2 {
+  margin: 12px;
+}
+
+.modal-container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(234, 234, 234, 0.7);
+  backdrop-filter: blur(10px);
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.modal {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  background-color: #252525;
+  border-radius: 20px;
+  margin: 150px auto;
+}
+
+.modal-inputs {
+  margin: 16px 0;
+}
+
+.modal input,
+.btn-pay,
+.btn-cancel{
+  padding: 10px 15px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.modal p {
+  font-size: 1.5em;
+}
+
+.btn-cancel {
+  background-color: rgb(209, 49, 49);
+}

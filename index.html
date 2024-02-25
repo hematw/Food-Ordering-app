@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-content">
+          <h1>Atom Cafe</h1>
+          <p>The real taste of foods</p>
+        </div>
+      </header>
+
+      <section>
+        <div id="menu"></div>
+      </section>
+
+      <section>
+        <div class="orders">
+          <ul class="orders-list" id="orders-list">
+          </ul>
+
+          <div class="total-orders">
+            <p>Total Price: </p>
+            <h2 class="total-price" id="total-price">
+              $0
+            </h2>
+            <button class="btn btn-cmp">Complete Order</button>
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+        <div class="modal-container">
+          <div class="modal">
+            <p>Enter Card detail</p>
+
+            <div class="modal-inputs">
+              <input type="text" placeholder="Name on Card" required>
+              <input type="number" placeholder="Card Number" required>
+              <input type="number" placeholder="CVV" required>
+              <input type="text" placeholder="Refferal Code" id="refferal" required>
+            </div>
+            <button class="btn btn-pay">Pay</button>
+            <button class="btn btn-cancel">Cancel</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
